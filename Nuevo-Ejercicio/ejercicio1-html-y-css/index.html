@@ -5,6 +5,44 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        
+        <form action="/registro" method="post">
+            <h1>Login</h1>
+            <br>
+            <div>
+                <label for="email">Email</label>
+            </div>
+            <div class="campo">
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="password">Password</label>
+            </div>
+            <div class="campo">
+            <input type="password" id="password" name="password" required>
+            </div>
+            <br>
+            <br>
+            <label>
+                <div>Género</div>
+                <select name="Genero" id="genero" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                    <option value="N">OHNI</option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <div>
+                <label>
+                <input type="checkbox" name="aceptacion" value="acepta" required> Acepto los términos.
+                </label>
+            </div>
+            <br>
+            <br>
+            <input type="submit" value="Ingresar" id="boton">
+        </form>
     </body>
 </html>
